@@ -58,7 +58,7 @@ Each table below has the following columns:
 |```noridiom``` |```noridiom_nb``` / ```noridiom_nn``` |✅ / ❌  |Norwegian language: grammar, punctuation, and idioms | [mimir-project/noridiom](https://huggingface.co/datasets/mimir-project/noridiom)  |
 |```ask_gec``` |```ask_gec_nb``` / ❌ |✅ / ✅  |Norwegian language: grammar, punctuation, and idioms | [ltg/ask-gec](https://huggingface.co/datasets/ltg/ask-gec)  |
 |```norsumm``` |```norsumm_nb``` / ```norsumm_nn``` |✅ / ❌ |Text summarization | [mimir-project/norsumm](https://huggingface.co/datasets/mimir-project/norsumm)  |
-|```schibsted_vg``` |```schibsted_vg_nb``` / ❌ |✅ / ❌ |Headline generation | [Schibsted/vg-front-title](https://huggingface.co/datasets/Schibsted/vg-front-title)  |
+|```schibsted_vg``` |```schibsted_vg_nb``` / ❌ |✅ / ✅  |Headline generation | [Schibsted/vg-front-title](https://huggingface.co/datasets/Schibsted/vg-front-title)  |
 |```nortruthfulqa_gen``` |```nortruthfulqa_gen_nb``` / ❌  |✅ / ❌   |Fairness & truthfulness | [mimir-project/nortruthfulqa_gen](https://huggingface.co/datasets/mimir-project/nortruthfulqa_gen)  |
 |```tatoeba_eng_nno``` (English → Nynorsk) |❌ / ```tatoeba_eng_nno_nn``` |✅ / ✅  |Machine translation | [Helsinki-NLP/tatoeba_mt](https://huggingface.co/datasets/Helsinki-NLP/tatoeba_mt)  |
 |```tatoeba_nno_eng``` (Nynorsk → English) |❌ / ```tatoeba_eng_nno_nn``` |✅ / ✅  |Machine translation | [Helsinki-NLP/tatoeba_mt](https://huggingface.co/datasets/Helsinki-NLP/tatoeba_mt)  |
@@ -177,7 +177,7 @@ lm_eval \
 1. ```BERTScore``` (used in the text summarization, machine translation, and headline generation tasks)
 * Unfortunately, there is an unresolved [bug](https://github.com/EleutherAI/lm-evaluation-harness/issues/1302) related to calculation of the BERTSCore. The current version of the mimir evaluation configuration files follows the proposed workaround; however, it slows the evaluation, since it loads the ```bertscore``` metric during evaluating each batch or prediction-reference pair.
 * **Solution**:
-  * One can discard computation of the ```BERTScore``` metric from the ```.yaml``` configuration file and use log_samples argument when conducting the evaluation run. 
+  * One can discard computation of the ```BERTScore``` metric from the ```.yaml``` configuration file and use the `--log_samples` argument when conducting the evaluation run. 
   * Then, one can use ```mimir/bertscore.py``` to compute the metric score for a given file with the saved predictions, which significantly reduces the computation costs.
   * *Example*:
     ```bash
