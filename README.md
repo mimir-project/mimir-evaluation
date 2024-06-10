@@ -162,7 +162,7 @@ lm_eval \
   --write_out \
   --predict_only \
   --batch_size auto \
-  --num_fewshot 1
+  --num_fewshot 0
 ```
 
 ## Comments on performance metrics and inference
@@ -185,8 +185,8 @@ lm_eval \
     ```
 2. ```ERRANT``` (used in the grammar error correction task)
 * This metric is calculated using a separate evaluation script, which can be found in ```mimir/ask_gec/errant.py```.
-  * Please refer to the installation instructions [here](https://github.com/chrisjbryant/errant/tree/main).
-  * *Example*:
+* Please refer to the installation instructions [here](https://github.com/chrisjbryant/errant/tree/main).
+* *Example*:
     ```bash
     python3 ask_gec/errant.py --fpath mimir_results/ask_gec/0-shot/mimir-7b-books/predictions.jsonl --out_fdir mimir_results/ask_gec/0-shot/mimir-7b-books/
     ```
