@@ -1,0 +1,17 @@
+group: schibsted_vg_nb
+task:
+  - task: prompt-0
+    include: _schibsted_vg_yaml
+    doc_to_text: "Lag en passende overskrift til denne artikkelen: {{article_text}}\nOverskrift:"
+  - task: prompt-1
+    include: _schibsted_vg_yaml
+    doc_to_text: "Tekst: {{article_text}}\\nTittel:"
+  - task: prompt-2
+    include: _schibsted_vg_yaml
+    doc_to_text: "Skriv en overskrift som kort oppsummerer denne artikkelen: {{article_text}}\nOverskrift:"
+  - task: prompt-3
+    include: _schibsted_vg_yaml
+    doc_to_text: "Skriv en fengende tittel til denne nyhetsartikkelen: {{article_text}}\nTittel:"
+  - task: prompt-4
+    include: _schibsted_vg_yaml
+    doc_to_text: "Artikkel: {{article_text}}\n\nOverskrift:"

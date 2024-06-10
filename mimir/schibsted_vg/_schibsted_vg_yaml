@@ -1,0 +1,21 @@
+dataset_path: Schibsted/vg-front-title
+output_type: generate_until
+training_split: train
+test_split: validation
+doc_to_target: front_title
+metric_list:
+  - metric: bleu
+    higher_is_better: true
+  - metric: chrf
+    higher_is_better: true
+  - metric: !function "utils.bertscore_f1"
+    aggregation: mean
+    higher_is_better: true
+    model_type: bert-base-multilingual-cased
+    num_layers: 9
+generation_kwargs:
+  until:
+    - "\n"
+  do_sample: false
+  num_beams: 1
+  max_new_tokens: 256

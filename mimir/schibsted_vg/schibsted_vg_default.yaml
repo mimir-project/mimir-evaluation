@@ -1,0 +1,3 @@
+task: schibsted_vg
+doc_to_text: "Lag en passende overskrift til denne artikkelen: {{article_text}}\nOverskrift:"
+include: _schibsted_vg_yaml
