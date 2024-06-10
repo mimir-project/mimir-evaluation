@@ -154,9 +154,9 @@ lm_eval \
 lm_eval \
   --model hf \
   --model_args pretrained=mimir-project/mimir-7b-books \
-  --tasks norquad_nb \
+  --tasks ask_gec \
   --include_path ./mimir/ \
-  --output mimir_results/norquad/0-shot/mimir-7b-books/ \
+  --output mimir_results/ask_gec/0-shot/mimir-7b-books/ \
   --log_samples \
   --show_config \
   --write_out \
