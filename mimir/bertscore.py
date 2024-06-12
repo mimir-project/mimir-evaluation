@@ -9,9 +9,9 @@ from evaluate import load
 TASK2FIELDS = {
     "ask_gec_nb": {"source": "source", "target": "correction"},
     "tatoeba_nob_nno_nb": {"source": "sourceString", "target": "targetString"},
-    "tatoeba_nob_eng_nb": {"source": "sourceString", "target": "targetString"},
-    "tatoeba_nno_nob_nn": {"source": "sourceString", "target": "targetString"},
-    "tatoeba_nno_eng_nn": {"source": "sourceString", "target": "targetString"},
+    "tatoeba_nob_eng_nb": {"source": "targetString", "target": "sourceString"},
+    "tatoeba_nno_nob_nn": {"source": "targetString", "target": "sourceString"},
+    "tatoeba_nno_eng_nn": {"source": "targetString", "target": "sourceString"},
     "tatoeba_eng_nno_nn": {"source": "sourceString", "target": "targetString"},
     "tatoeba_eng_nob_nb": {"source": "sourceString", "target": "targetString"},
     "schibsted_vg_nb": {"source": "article_text", "target": "front_title"},
