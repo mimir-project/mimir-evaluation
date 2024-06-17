@@ -1,0 +1,14 @@
+Model	bleu	delta bleu	chrf	delta chrf	bertscore_f1	delta bertscore_f1
+@extended	10.49	xmark	42.58	xmark	87.49	xmark
+@extendedscratch	12.5	xmark	47.18	xmark	88.0	xmark
+@base	10.96	xmark	43.29	xmark	84.74	xmark
+@basescratch	24.36	xmark	64.14	xmark	94.53	xmark
+@fiction	8.93	--15.4	38.74	--25.4	89.16	--5.4
+@nonfiction	9.79	--14.6	40.6	--23.5	85.84	--8.7
+@factual	17.06	--7.3	55.19	--9.0	93.8	--0.7
+@newspapers	45.31	+21.0	77.56	+13.4	96.08	+1.5
+@books	8.48	--15.9	37.37	--26.8	85.78	--8.8
+@rightholders	11.8	--12.6	45.52	--18.6	91.7	--2.8
+@untranslatedwithnewspapers	16.53	--7.8	53.5	--10.6	93.38	--1.2
+@untranslated	8.77	--15.6	37.97	--26.2	86.22	--8.3
+@translated	8.72	--15.6	37.42	--26.7	85.27	--9.3

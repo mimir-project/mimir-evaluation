@@ -1,0 +1,15 @@
+Model	ncb (acc)	delta (acc)
+@extended	54.88	xmark
+@extendedscratch	79.52	xmark
+@base	80.95	xmark
+@basescratch	77.26	xmark
+@fiction	83.93	+6.7
+@nonfiction	84.17	+6.9
+@factual	82.14	+4.9
+@newspapers	81.07	+3.8
+@books	83.81	+6.5
+@rightholders	84.05	+6.8
+@untranslatedwithnewspapers	83.81	+6.5
+@untranslated	84.88	+7.6
+@translated	83.81	+6.5
+Random	50.0	xmark

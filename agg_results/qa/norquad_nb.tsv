@@ -1,0 +1,27 @@
+Model	norquad_nb (exact_match)	delta (exact_match)	norquad_nb (f1)	delta (f1)	Rank
+@extended	23.09	xmark	50.43	xmark	2
+@extendedscratch	22.46	xmark	45.55	xmark	3
+@base	24.79	xmark	48.16	xmark	1
+@basescratch	18.43	xmark	40.59	xmark	4
+@fiction	16.31	--2.1	38.24	--2.4	5
+@nonfiction	9.11	--9.3	34.68	--5.9	11
+@factual	12.08	--6.4	37.38	--3.2	8
+@newspapers	14.41	--4.0	36.99	--3.6	7
+@books	8.48	--10.0	35.59	--5.0	12
+@rightholders	11.23	--7.2	37.66	--2.9	9
+@untranslatedwithnewspapers	9.75	--8.7	36.18	--4.4	10
+@untranslated	7.42	--11.0	33.5	--7.1	13
+@translated	14.62	--3.8	40.12	--0.5	6
+@extended	47.03	xmark	69.92	xmark	1
+@extendedscratch	27.97	xmark	48.2	xmark	3
+@base	45.55	xmark	67.74	xmark	2
+@basescratch	26.91	xmark	47.3	xmark	4
+@fiction	15.89	--11.0	39.76	--7.5	10
+@nonfiction	7.42	--19.5	34.22	--13.1	13
+@factual	17.8	--9.1	44.32	--3.0	7
+@newspapers	17.58	--9.3	40.36	--6.9	9
+@books	11.86	--15.0	39.1	--8.2	11
+@rightholders	18.01	--8.9	42.41	--4.9	6
+@untranslatedwithnewspapers	17.8	--9.1	42.84	--4.5	8
+@untranslated	9.75	--17.2	37.52	--9.8	12
+@translated	18.43	--8.5	42.52	--4.8	5

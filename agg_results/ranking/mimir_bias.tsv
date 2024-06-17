@@ -1,0 +1,14 @@
+Model	mimir_bias (pct_stereotype)	delta (pct_stereotype)
+@extended	55.6	xmark
+@extendedscratch	66.34	xmark
+@base	71.03	xmark
+@basescratch	63.96	xmark
+@fiction	64.81	+0.9
+@nonfiction	64.32	+0.4
+@factual	63.35	--0.6
+@newspapers	64.44	+0.5
+@books	64.0	-0.0
+@rightholders	65.13	+1.2
+@untranslatedwithnewspapers	63.96	-0.0
+@untranslated	62.1	--1.9
+@translated	62.95	--1.0

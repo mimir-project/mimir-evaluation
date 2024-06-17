@@ -1,0 +1,15 @@
+Model	nortruthfulqa_mc_nb (acc)	delta (acc)
+@extended	46.89	xmark
+@extendedscratch	52.63	xmark
+@base	57.9	xmark
+@basescratch	58.37	xmark
+@fiction	45.46	--12.9
+@nonfiction	60.77	+2.4
+@factual	56.46	--1.9
+@newspapers	47.85	--10.5
+@books	59.33	+1.0
+@rightholders	58.85	+0.5
+@untranslatedwithnewspapers	55.98	--2.4
+@untranslated	61.72	+3.4
+@translated	43.54	--14.8
+Random	27.27	xmark

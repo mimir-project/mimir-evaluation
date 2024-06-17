@@ -1,0 +1,14 @@
+Model	noridiom_nb (em)	delta (em)	noridiom_nb (fscore)	delta (fscore)
+@extended	34.58	xmark	46.34	xmark
+@extendedscratch	25.12	xmark	36.78	xmark
+@base	20.15	xmark	36.23	xmark
+@basescratch	12.69	xmark	24.15	xmark
+@fiction	16.17	+3.5	26.93	+2.8
+@nonfiction	48.01	+35.3	57.68	+33.5
+@factual	56.96	+44.3	64.05	+39.9
+@newspapers	69.4	+56.7	74.91	+50.8
+@books	48.76	+36.1	57.44	+33.3
+@rightholders	51.49	+38.8	59.06	+34.9
+@untranslatedwithnewspapers	54.48	+41.8	61.87	+37.7
+@untranslated	49.75	+37.1	59.15	+35.0
+@translated	23.63	+10.9	34.71	+10.6

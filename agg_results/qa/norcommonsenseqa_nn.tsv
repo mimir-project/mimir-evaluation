@@ -1,0 +1,15 @@
+Model	norcommonsenseqa_nn (acc)	delta (acc)
+@extended	45.26	xmark
+@extendedscratch	38.95	xmark
+@base	48.42	xmark
+@basescratch	36.84	xmark
+@fiction	37.9	+1.1
+@nonfiction	37.9	+1.1
+@factual	41.05	+4.2
+@newspapers	34.74	--2.1
+@books	34.74	--2.1
+@rightholders	38.95	+2.1
+@untranslatedwithnewspapers	37.9	+1.1
+@untranslated	36.84	-0.0
+@translated	41.05	+4.2
+Random	20.0	xmark

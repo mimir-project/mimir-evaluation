@@ -1,0 +1,16 @@
+Model	nrk_nn (acc)	delta (acc)
+@extended	66.54	xmark
+@extendedscratch	59.92	xmark
+@base	64.96	xmark
+@basescratch	54.29	xmark
+@fiction	49.47	--4.8
+@nonfiction	53.61	--0.7
+@factual	55.19	+0.9
+@newspapers	55.19	+0.9
+@books	53.01	--1.3
+@rightholders	54.51	+0.2
+@untranslatedwithnewspapers	55.04	+0.8
+@untranslated	54.59	+0.3
+@translated	50.15	--4.1
+Random	26.76	xmark
+Constant	30.45	xmark
