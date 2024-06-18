@@ -1,0 +1,257 @@
+{
+  "results": {
+    "norec_sentence_nb": {
+      "f1,none": 0.631756361533276,
+      "f1_stderr,none": "N/A",
+      "acc,none": 0.7746140651801029,
+      "acc_stderr,none": 0.007635788697753565,
+      "alias": "norec_sentence_nb"
+    },
+    "prompt-0": {
+      "acc,none": 0.9073756432246999,
+      "acc_stderr,none": 0.012016961474137115,
+      "f1,none": 0.8879005839623986,
+      "f1_stderr,none": "N/A",
+      "alias": " - prompt-0"
+    },
+    "prompt-1": {
+      "acc,none": 0.7324185248713551,
+      "acc_stderr,none": 0.018350427642639274,
+      "f1,none": 0.5469814704124328,
+      "f1_stderr,none": "N/A",
+      "alias": " - prompt-1"
+    },
+    "prompt-2": {
+      "acc,none": 0.7838765008576329,
+      "acc_stderr,none": 0.017061347377370837,
+      "f1,none": 0.6734735606841862,
+      "f1_stderr,none": "N/A",
+      "alias": " - prompt-2"
+    },
+    "prompt-3": {
+      "acc,none": 0.7169811320754716,
+      "acc_stderr,none": 0.018672396717637343,
+      "f1,none": 0.5001117271985575,
+      "f1_stderr,none": "N/A",
+      "alias": " - prompt-3"
+    },
+    "prompt-4": {
+      "acc,none": 0.7324185248713551,
+      "acc_stderr,none": 0.01835042764263927,
+      "f1,none": 0.550314465408805,
+      "f1_stderr,none": "N/A",
+      "alias": " - prompt-4"
+    }
+  },
+  "groups": {
+    "norec_sentence_nb": {
+      "f1,none": 0.631756361533276,
+      "f1_stderr,none": "N/A",
+      "acc,none": 0.7746140651801029,
+      "acc_stderr,none": 0.007635788697753565,
+      "alias": "norec_sentence_nb"
+    }
+  },
+  "group_subtasks": {
+    "norec_sentence_nb": [
+      "prompt-4",
+      "prompt-3",
+      "prompt-2",
+      "prompt-1",
+      "prompt-0"
+    ]
+  },
+  "configs": {
+    "prompt-0": {
+      "task": "prompt-0",
+      "dataset_path": "ltg/norec_sentence",
+      "dataset_name": "binary",
+      "training_split": "train",
+      "test_split": "test",
+      "doc_to_text": "Tekst: {{review}}\nSentiment:",
+      "doc_to_target": "sentiment",
+      "doc_to_choice": [
+        "negativ",
+        "positiv"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 16,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "f1",
+          "aggregation": "def multi_f1(items):\n    preds, golds = zip(*items)\n    preds = np.array(preds)\n    golds = np.array(golds)\n    fscore = sklearn.metrics.f1_score(golds, preds, average=\"macro\")\n    return fscore\n",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-1": {
+      "task": "prompt-1",
+      "dataset_path": "ltg/norec_sentence",
+      "dataset_name": "binary",
+      "training_split": "train",
+      "test_split": "test",
+      "doc_to_text": "{{review}}\nEr denne setninga \"positiv\" eller \"negativ\"?",
+      "doc_to_target": "sentiment",
+      "doc_to_choice": [
+        "negativ",
+        "positiv"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 16,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "f1",
+          "aggregation": "def multi_f1(items):\n    preds, golds = zip(*items)\n    preds = np.array(preds)\n    golds = np.array(golds)\n    fscore = sklearn.metrics.f1_score(golds, preds, average=\"macro\")\n    return fscore\n",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-2": {
+      "task": "prompt-2",
+      "dataset_path": "ltg/norec_sentence",
+      "dataset_name": "binary",
+      "training_split": "train",
+      "test_split": "test",
+      "doc_to_text": "{{review}}\nKva slags sentiment uttrykkjer anmeldaren?",
+      "doc_to_target": "sentiment",
+      "doc_to_choice": [
+        "negativ",
+        "positiv"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 16,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "f1",
+          "aggregation": "def multi_f1(items):\n    preds, golds = zip(*items)\n    preds = np.array(preds)\n    golds = np.array(golds)\n    fscore = sklearn.metrics.f1_score(golds, preds, average=\"macro\")\n    return fscore\n",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-3": {
+      "task": "prompt-3",
+      "dataset_path": "ltg/norec_sentence",
+      "dataset_name": "binary",
+      "training_split": "train",
+      "test_split": "test",
+      "doc_to_text": "{{review}}\nEr anmeldelsen \"positiv\" eller \"negativ\"?",
+      "doc_to_target": "sentiment",
+      "doc_to_choice": [
+        "negativ",
+        "positiv"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 16,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "f1",
+          "aggregation": "def multi_f1(items):\n    preds, golds = zip(*items)\n    preds = np.array(preds)\n    golds = np.array(golds)\n    fscore = sklearn.metrics.f1_score(golds, preds, average=\"macro\")\n    return fscore\n",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-4": {
+      "task": "prompt-4",
+      "dataset_path": "ltg/norec_sentence",
+      "dataset_name": "binary",
+      "training_split": "train",
+      "test_split": "test",
+      "doc_to_text": "{{review}}\nEr denne setninga positiv eller negativ?",
+      "doc_to_target": "sentiment",
+      "doc_to_choice": [
+        "negativ",
+        "positiv"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 16,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "f1",
+          "aggregation": "def multi_f1(items):\n    preds, golds = zip(*items)\n    preds = np.array(preds)\n    golds = np.array(golds)\n    fscore = sklearn.metrics.f1_score(golds, preds, average=\"macro\")\n    return fscore\n",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false
+    }
+  },
+  "versions": {
+    "prompt-0": "Yaml",
+    "prompt-1": "Yaml",
+    "prompt-2": "Yaml",
+    "prompt-3": "Yaml",
+    "prompt-4": "Yaml"
+  },
+  "n-shot": {
+    "norec_sentence_nb": 16,
+    "prompt-0": 16,
+    "prompt-1": 16,
+    "prompt-2": 16,
+    "prompt-3": 16,
+    "prompt-4": 16
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=mimir-project/mimir-mistral-7b-extended-scratch,cache_dir=/pfs/lustrep3/scratch/project_465000498/models/",
+    "batch_size": "16",
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null
+  },
+  "git_hash": null,
+  "date": 1717967110.3508487,
+  "pretty_env_info": "PyTorch version: 1.13.1+rocm5.2\nIs debug build: False\nCUDA used to build PyTorch: N/A\nROCM used to build PyTorch: 5.2.21151-afdc89f8\n\nOS: SUSE Linux Enterprise Server 15 SP4 (x86_64)\nGCC version: (SUSE Linux) 7.5.0\nClang version: Could not collect\nCMake version: version 3.20.4\nLibc version: glibc-2.31\n\nPython version: 3.9.12 (main, Apr 18 2022, 21:29:31)  [GCC 9.3.0 20200312 (Cray Inc.)] (64-bit runtime)\nPython platform: Linux-5.14.21-150400.24.81_12.0.75-cray_shasta_c-x86_64-with-glibc2.31\nIs CUDA available: True\nCUDA runtime version: Could not collect\nCUDA_MODULE_LOADING set to: LAZY\nGPU models and configuration: \nNvidia driver version: Could not collect\ncuDNN version: Could not collect\nHIP runtime version: 5.2.21153\nMIOpen runtime version: 2.17.0\nIs XNNPACK available: True\n\nVersions of relevant libraries:\n[pip3] mypy-extensions==1.0.0\n[pip3] numpy==1.24.2\n[pip3] numpyencoder==0.3.0\n[pip3] torch==1.13.1+rocm5.2\n[pip3] torchaudio==0.13.1+rocm5.2\n[pip3] torchmetrics==0.9.3\n[pip3] torchvision==0.14.1+rocm5.2\n[conda] Could not collect",
+  "transformers_version": "4.37.1",
+  "upper_git_hash": null
+}

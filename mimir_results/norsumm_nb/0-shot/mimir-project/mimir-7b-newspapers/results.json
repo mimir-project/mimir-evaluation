@@ -1,0 +1,507 @@
+{
+  "results": {
+    "norsumm_nb": {
+      "rougeL_max,none": 16.162287458675838,
+      "rougeL_max_stderr,none": 1.2971701822478374,
+      "bleu_max,none": 6.304166651031154,
+      "bleu_max_stderr,none": 1.0142044819872578,
+      "bertscore_f1_avg,none": 0.4115118730951239,
+      "bertscore_f1_avg_stderr,none": 0.011384465452621128,
+      "bleu_avg,none": 3.5547250335804823,
+      "bleu_avg_stderr,none": 0.5380201883993269,
+      "rougeL_avg,none": 13.052505429444036,
+      "rougeL_avg_stderr,none": 0.9914832904267571,
+      "bertscore_f1_max,none": 0.42223314907815723,
+      "bertscore_f1_max_stderr,none": 0.011916084363129027,
+      "alias": "norsumm_nb"
+    },
+    "prompt-0": {
+      "bleu_max,none": 9.995609887273853,
+      "bleu_max_stderr,none": 2.960781014935536,
+      "bleu_avg,none": 5.763957245027554,
+      "bleu_avg_stderr,none": 1.5812210065051229,
+      "rougeL_max,none": 28.092345541951378,
+      "rougeL_max_stderr,none": 3.7347863090214557,
+      "rougeL_avg,none": 22.936499757336417,
+      "rougeL_avg_stderr,none": 2.8750735495741204,
+      "bertscore_f1_max,none": 0.6790513674418132,
+      "bertscore_f1_max_stderr,none": 0.017932803304283863,
+      "bertscore_f1_avg,none": 0.6608390043179193,
+      "bertscore_f1_avg_stderr,none": 0.016182106990502428,
+      "alias": " - prompt-0"
+    },
+    "prompt-1": {
+      "bleu_max,none": 12.515299976318905,
+      "bleu_max_stderr,none": 3.341887424615764,
+      "bleu_avg,none": 7.114813940888022,
+      "bleu_avg_stderr,none": 1.8515007685316174,
+      "rougeL_max,none": 29.838178502347073,
+      "rougeL_max_stderr,none": 3.8850613809874757,
+      "rougeL_avg,none": 24.281387670895768,
+      "rougeL_avg_stderr,none": 2.925626098145786,
+      "bertscore_f1_max,none": 0.6884389380613963,
+      "bertscore_f1_max_stderr,none": 0.018911868151326207,
+      "bertscore_f1_avg,none": 0.6664987948205735,
+      "bertscore_f1_avg_stderr,none": 0.015537150648606491,
+      "alias": " - prompt-1"
+    },
+    "prompt-2": {
+      "bleu_max,none": 0.0,
+      "bleu_max_stderr,none": 0.0,
+      "bleu_avg,none": 0.0,
+      "bleu_avg_stderr,none": 0.0,
+      "rougeL_max,none": 0.0,
+      "rougeL_max_stderr,none": 0.0,
+      "rougeL_avg,none": 0.0,
+      "rougeL_avg_stderr,none": 0.0,
+      "bertscore_f1_max,none": 0.0,
+      "bertscore_f1_max_stderr,none": 0.0,
+      "bertscore_f1_avg,none": 0.0,
+      "bertscore_f1_avg_stderr,none": 0.0,
+      "alias": " - prompt-2"
+    },
+    "prompt-3": {
+      "bleu_max,none": 0.9069526607989448,
+      "bleu_max_stderr,none": 0.31122509712497326,
+      "bleu_avg,none": 0.5830719115039994,
+      "bleu_avg_stderr,none": 0.1760157575954347,
+      "rougeL_max,none": 9.624540896327431,
+      "rougeL_max_stderr,none": 1.7363057844404144,
+      "rougeL_avg,none": 7.823200085719317,
+      "rougeL_avg_stderr,none": 1.4997051401084076,
+      "bertscore_f1_max,none": 0.5570463091135025,
+      "bertscore_f1_max_stderr,none": 0.029671676578284945,
+      "bertscore_f1_avg,none": 0.5492068979475234,
+      "bertscore_f1_avg_stderr,none": 0.029200018668741192,
+      "alias": " - prompt-3"
+    },
+    "prompt-4": {
+      "bleu_max,none": 12.167060170338772,
+      "bleu_max_stderr,none": 3.465631184884454,
+      "bleu_avg,none": 6.746978299296305,
+      "bleu_avg_stderr,none": 1.7951499354034144,
+      "rougeL_max,none": 26.64294729593967,
+      "rougeL_max_stderr,none": 4.562208772934821,
+      "rougeL_avg,none": 21.213631304826254,
+      "rougeL_avg_stderr,none": 3.4741997463042606,
+      "bertscore_f1_max,none": 0.5649525980154674,
+      "bertscore_f1_max_stderr,none": 0.05036035831277955,
+      "bertscore_f1_avg,none": 0.5498456998003854,
+      "bertscore_f1_avg_stderr,none": 0.04854771794801587,
+      "alias": " - prompt-4"
+    },
+    "prompt-5": {
+      "bleu_max,none": 2.2400772114564473,
+      "bleu_max_stderr,none": 2.2334032278694664,
+      "bleu_avg,none": 1.119528804767011,
+      "bleu_avg_stderr,none": 1.1130616459666,
+      "rougeL_max,none": 2.775712515489467,
+      "rougeL_max_stderr,none": 2.7757125154894666,
+      "rougeL_avg,none": 2.060313757886467,
+      "rougeL_avg_stderr,none": 2.0603137578864676,
+      "bertscore_f1_max,none": 0.04390968183676402,
+      "bertscore_f1_max_stderr,none": 0.03187369015489613,
+      "bertscore_f1_avg,none": 0.04268084168434143,
+      "bertscore_f1_avg_stderr,none": 0.03087122099892984,
+      "alias": " - prompt-5"
+    }
+  },
+  "groups": {
+    "norsumm_nb": {
+      "rougeL_max,none": 16.162287458675838,
+      "rougeL_max_stderr,none": 1.2971701822478374,
+      "bleu_max,none": 6.304166651031154,
+      "bleu_max_stderr,none": 1.0142044819872578,
+      "bertscore_f1_avg,none": 0.4115118730951239,
+      "bertscore_f1_avg_stderr,none": 0.011384465452621128,
+      "bleu_avg,none": 3.5547250335804823,
+      "bleu_avg_stderr,none": 0.5380201883993269,
+      "rougeL_avg,none": 13.052505429444036,
+      "rougeL_avg_stderr,none": 0.9914832904267571,
+      "bertscore_f1_max,none": 0.42223314907815723,
+      "bertscore_f1_max_stderr,none": 0.011916084363129027,
+      "alias": "norsumm_nb"
+    }
+  },
+  "group_subtasks": {
+    "norsumm_nb": [
+      "prompt-5",
+      "prompt-4",
+      "prompt-3",
+      "prompt-2",
+      "prompt-1",
+      "prompt-0"
+    ]
+  },
+  "configs": {
+    "prompt-0": {
+      "task": "prompt-0",
+      "dataset_path": "ltg/norsumm",
+      "dataset_name": "nb",
+      "test_split": "test",
+      "doc_to_text": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:",
+      "doc_to_target": "summaries",
+      "process_results": "def process_results(doc, results):\n    completion = results[0]\n    references = doc[\"summaries\"]\n\n    bleu_scores = [bleu([[reference]], [completion]) for reference in references]\n    bleu_max = np.nanmax(bleu_scores)\n    bleu_avg = np.nanmean(bleu_scores)\n\n    rouge_scores = [rouge([reference], [completion]) for reference in references]\n    rougeL_scores = [score[\"rougeLsum\"] for score in rouge_scores]\n    rougeL_max = np.nanmax(rougeL_scores)\n    rougeL_avg = np.nanmean(rougeL_scores)\n\n    bertscore_f1s = [\n        bertscore_f1(references=[reference], predictions=[completion])\n        for reference in references\n    ]\n    bertscore_f1_max = np.nanmax(bertscore_f1s)\n    bertscore_f1_avg = np.nanmean(bertscore_f1s)\n\n    return {\n        \"bleu_max\": bleu_max,\n        \"bleu_avg\": bleu_avg,\n        \"rougeL_max\": rougeL_max,\n        \"rougeL_avg\": rougeL_avg,\n        \"bertscore_f1_max\": bertscore_f1_max,\n        \"bertscore_f1_avg\": bertscore_f1_avg,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "bleu_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bleu_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "rougeL_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "rougeL_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bertscore_f1_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bertscore_f1_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "\n"
+        ],
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 256
+      },
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-1": {
+      "task": "prompt-1",
+      "dataset_path": "ltg/norsumm",
+      "dataset_name": "nb",
+      "test_split": "test",
+      "doc_to_text": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:",
+      "doc_to_target": "summaries",
+      "process_results": "def process_results(doc, results):\n    completion = results[0]\n    references = doc[\"summaries\"]\n\n    bleu_scores = [bleu([[reference]], [completion]) for reference in references]\n    bleu_max = np.nanmax(bleu_scores)\n    bleu_avg = np.nanmean(bleu_scores)\n\n    rouge_scores = [rouge([reference], [completion]) for reference in references]\n    rougeL_scores = [score[\"rougeLsum\"] for score in rouge_scores]\n    rougeL_max = np.nanmax(rougeL_scores)\n    rougeL_avg = np.nanmean(rougeL_scores)\n\n    bertscore_f1s = [\n        bertscore_f1(references=[reference], predictions=[completion])\n        for reference in references\n    ]\n    bertscore_f1_max = np.nanmax(bertscore_f1s)\n    bertscore_f1_avg = np.nanmean(bertscore_f1s)\n\n    return {\n        \"bleu_max\": bleu_max,\n        \"bleu_avg\": bleu_avg,\n        \"rougeL_max\": rougeL_max,\n        \"rougeL_avg\": rougeL_avg,\n        \"bertscore_f1_max\": bertscore_f1_max,\n        \"bertscore_f1_avg\": bertscore_f1_avg,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "bleu_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bleu_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "rougeL_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "rougeL_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bertscore_f1_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bertscore_f1_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "\n"
+        ],
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 256
+      },
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-2": {
+      "task": "prompt-2",
+      "dataset_path": "ltg/norsumm",
+      "dataset_name": "nb",
+      "test_split": "test",
+      "doc_to_text": "{{article}}\nSkriv en kort og presis oppsummering av teksten over. Språket må være klart og lett å forstå. Sørg for å ikke introdusere feil. Oppsummeringen må dekke følgende spørsmål: hvem, hva, hvor, når, og hvorfor er denne saken viktig å vite om. Oppsummeringen må være engasjerende og fremheve nøkkelinformasjon fra artikkelen. Oppsummeringen skal inneholde maksimalt 700 tegn, inkludert mellomrom.",
+      "doc_to_target": "summaries",
+      "process_results": "def process_results(doc, results):\n    completion = results[0]\n    references = doc[\"summaries\"]\n\n    bleu_scores = [bleu([[reference]], [completion]) for reference in references]\n    bleu_max = np.nanmax(bleu_scores)\n    bleu_avg = np.nanmean(bleu_scores)\n\n    rouge_scores = [rouge([reference], [completion]) for reference in references]\n    rougeL_scores = [score[\"rougeLsum\"] for score in rouge_scores]\n    rougeL_max = np.nanmax(rougeL_scores)\n    rougeL_avg = np.nanmean(rougeL_scores)\n\n    bertscore_f1s = [\n        bertscore_f1(references=[reference], predictions=[completion])\n        for reference in references\n    ]\n    bertscore_f1_max = np.nanmax(bertscore_f1s)\n    bertscore_f1_avg = np.nanmean(bertscore_f1s)\n\n    return {\n        \"bleu_max\": bleu_max,\n        \"bleu_avg\": bleu_avg,\n        \"rougeL_max\": rougeL_max,\n        \"rougeL_avg\": rougeL_avg,\n        \"bertscore_f1_max\": bertscore_f1_max,\n        \"bertscore_f1_avg\": bertscore_f1_avg,\n    }\n",
+      "description": "",
+      "target_delimiter": "\n",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "bleu_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bleu_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "rougeL_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "rougeL_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bertscore_f1_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bertscore_f1_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "\n"
+        ],
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 256
+      },
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-3": {
+      "task": "prompt-3",
+      "dataset_path": "ltg/norsumm",
+      "dataset_name": "nb",
+      "test_split": "test",
+      "doc_to_text": "Gi et kortfattet sammendrag av følgende tekst: {{article}}",
+      "doc_to_target": "summaries",
+      "process_results": "def process_results(doc, results):\n    completion = results[0]\n    references = doc[\"summaries\"]\n\n    bleu_scores = [bleu([[reference]], [completion]) for reference in references]\n    bleu_max = np.nanmax(bleu_scores)\n    bleu_avg = np.nanmean(bleu_scores)\n\n    rouge_scores = [rouge([reference], [completion]) for reference in references]\n    rougeL_scores = [score[\"rougeLsum\"] for score in rouge_scores]\n    rougeL_max = np.nanmax(rougeL_scores)\n    rougeL_avg = np.nanmean(rougeL_scores)\n\n    bertscore_f1s = [\n        bertscore_f1(references=[reference], predictions=[completion])\n        for reference in references\n    ]\n    bertscore_f1_max = np.nanmax(bertscore_f1s)\n    bertscore_f1_avg = np.nanmean(bertscore_f1s)\n\n    return {\n        \"bleu_max\": bleu_max,\n        \"bleu_avg\": bleu_avg,\n        \"rougeL_max\": rougeL_max,\n        \"rougeL_avg\": rougeL_avg,\n        \"bertscore_f1_max\": bertscore_f1_max,\n        \"bertscore_f1_avg\": bertscore_f1_avg,\n    }\n",
+      "description": "",
+      "target_delimiter": "\n",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "bleu_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bleu_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "rougeL_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "rougeL_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bertscore_f1_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bertscore_f1_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "\n"
+        ],
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 256
+      },
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-4": {
+      "task": "prompt-4",
+      "dataset_path": "ltg/norsumm",
+      "dataset_name": "nb",
+      "test_split": "test",
+      "doc_to_text": "Lag en kort oppsummering som sammenfatter den følgende teksten i noen få punkter:\n{{article}}\n\nOppsummering:",
+      "doc_to_target": "summaries",
+      "process_results": "def process_results(doc, results):\n    completion = results[0]\n    references = doc[\"summaries\"]\n\n    bleu_scores = [bleu([[reference]], [completion]) for reference in references]\n    bleu_max = np.nanmax(bleu_scores)\n    bleu_avg = np.nanmean(bleu_scores)\n\n    rouge_scores = [rouge([reference], [completion]) for reference in references]\n    rougeL_scores = [score[\"rougeLsum\"] for score in rouge_scores]\n    rougeL_max = np.nanmax(rougeL_scores)\n    rougeL_avg = np.nanmean(rougeL_scores)\n\n    bertscore_f1s = [\n        bertscore_f1(references=[reference], predictions=[completion])\n        for reference in references\n    ]\n    bertscore_f1_max = np.nanmax(bertscore_f1s)\n    bertscore_f1_avg = np.nanmean(bertscore_f1s)\n\n    return {\n        \"bleu_max\": bleu_max,\n        \"bleu_avg\": bleu_avg,\n        \"rougeL_max\": rougeL_max,\n        \"rougeL_avg\": rougeL_avg,\n        \"bertscore_f1_max\": bertscore_f1_max,\n        \"bertscore_f1_avg\": bertscore_f1_avg,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "bleu_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bleu_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "rougeL_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "rougeL_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bertscore_f1_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bertscore_f1_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "\n"
+        ],
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 256
+      },
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-5": {
+      "task": "prompt-5",
+      "dataset_path": "ltg/norsumm",
+      "dataset_name": "nb",
+      "test_split": "test",
+      "doc_to_text": "Hele artikkelen:\n{{article}}\n\nHovedpunkter:",
+      "doc_to_target": "summaries",
+      "process_results": "def process_results(doc, results):\n    completion = results[0]\n    references = doc[\"summaries\"]\n\n    bleu_scores = [bleu([[reference]], [completion]) for reference in references]\n    bleu_max = np.nanmax(bleu_scores)\n    bleu_avg = np.nanmean(bleu_scores)\n\n    rouge_scores = [rouge([reference], [completion]) for reference in references]\n    rougeL_scores = [score[\"rougeLsum\"] for score in rouge_scores]\n    rougeL_max = np.nanmax(rougeL_scores)\n    rougeL_avg = np.nanmean(rougeL_scores)\n\n    bertscore_f1s = [\n        bertscore_f1(references=[reference], predictions=[completion])\n        for reference in references\n    ]\n    bertscore_f1_max = np.nanmax(bertscore_f1s)\n    bertscore_f1_avg = np.nanmean(bertscore_f1s)\n\n    return {\n        \"bleu_max\": bleu_max,\n        \"bleu_avg\": bleu_avg,\n        \"rougeL_max\": rougeL_max,\n        \"rougeL_avg\": rougeL_avg,\n        \"bertscore_f1_max\": bertscore_f1_max,\n        \"bertscore_f1_avg\": bertscore_f1_avg,\n    }\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "bleu_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bleu_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "rougeL_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "rougeL_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bertscore_f1_max",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "bertscore_f1_avg",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "\n"
+        ],
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 256
+      },
+      "repeats": 1,
+      "should_decontaminate": false
+    }
+  },
+  "versions": {
+    "prompt-0": "Yaml",
+    "prompt-1": "Yaml",
+    "prompt-2": "Yaml",
+    "prompt-3": "Yaml",
+    "prompt-4": "Yaml",
+    "prompt-5": "Yaml"
+  },
+  "n-shot": {
+    "norsumm_nb": 0,
+    "prompt-0": 0,
+    "prompt-1": 0,
+    "prompt-2": 0,
+    "prompt-3": 0,
+    "prompt-4": 0,
+    "prompt-5": 0
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=mimir-project/mimir-7b-newspapers,cache_dir=/pfs/lustrep3/scratch/project_465000498/models/",
+    "batch_size": "16",
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null
+  },
+  "git_hash": null,
+  "date": 1717535471.0215573,
+  "pretty_env_info": "PyTorch version: 1.13.1+rocm5.2\nIs debug build: False\nCUDA used to build PyTorch: N/A\nROCM used to build PyTorch: 5.2.21151-afdc89f8\n\nOS: SUSE Linux Enterprise Server 15 SP4 (x86_64)\nGCC version: (SUSE Linux) 7.5.0\nClang version: Could not collect\nCMake version: version 3.20.4\nLibc version: glibc-2.31\n\nPython version: 3.9.12 (main, Apr 18 2022, 21:29:31)  [GCC 9.3.0 20200312 (Cray Inc.)] (64-bit runtime)\nPython platform: Linux-5.14.21-150400.24.81_12.0.75-cray_shasta_c-x86_64-with-glibc2.31\nIs CUDA available: True\nCUDA runtime version: Could not collect\nCUDA_MODULE_LOADING set to: LAZY\nGPU models and configuration: \nNvidia driver version: Could not collect\ncuDNN version: Could not collect\nHIP runtime version: 5.2.21153\nMIOpen runtime version: 2.17.0\nIs XNNPACK available: True\n\nVersions of relevant libraries:\n[pip3] mypy-extensions==1.0.0\n[pip3] numpy==1.24.2\n[pip3] numpyencoder==0.3.0\n[pip3] torch==1.13.1+rocm5.2\n[pip3] torchaudio==0.13.1+rocm5.2\n[pip3] torchmetrics==0.9.3\n[pip3] torchvision==0.14.1+rocm5.2\n[conda] Could not collect",
+  "transformers_version": "4.37.1",
+  "upper_git_hash": null
+}

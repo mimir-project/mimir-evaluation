@@ -1,0 +1,237 @@
+{
+  "results": {
+    "norcommonsenseqa_nn": {
+      "acc_norm,none": 0.24210526315789474,
+      "acc_norm_stderr,none": 0.01940713789402488,
+      "acc,none": 0.25263157894736843,
+      "acc_stderr,none": 0.01968455185911697,
+      "alias": "norcommonsenseqa_nn"
+    },
+    "prompt-0": {
+      "acc,none": 0.4105263157894737,
+      "acc_stderr,none": 0.050738635645512106,
+      "acc_norm,none": 0.4,
+      "acc_norm_stderr,none": 0.050529115263991134,
+      "alias": " - prompt-0"
+    },
+    "prompt-1": {
+      "acc,none": 0.18947368421052632,
+      "acc_stderr,none": 0.040419792813514065,
+      "acc_norm,none": 0.18947368421052632,
+      "acc_norm_stderr,none": 0.040419792813514065,
+      "alias": " - prompt-1"
+    },
+    "prompt-2": {
+      "acc,none": 0.23157894736842105,
+      "acc_stderr,none": 0.04350961479755295,
+      "acc_norm,none": 0.23157894736842105,
+      "acc_norm_stderr,none": 0.04350961479755295,
+      "alias": " - prompt-2"
+    },
+    "prompt-3": {
+      "acc,none": 0.24210526315789474,
+      "acc_stderr,none": 0.04418172153936914,
+      "acc_norm,none": 0.2,
+      "acc_norm_stderr,none": 0.041256849850351704,
+      "alias": " - prompt-3"
+    },
+    "prompt-4": {
+      "acc,none": 0.18947368421052632,
+      "acc_stderr,none": 0.040419792813514065,
+      "acc_norm,none": 0.18947368421052632,
+      "acc_norm_stderr,none": 0.040419792813514065,
+      "alias": " - prompt-4"
+    }
+  },
+  "groups": {
+    "norcommonsenseqa_nn": {
+      "acc_norm,none": 0.24210526315789474,
+      "acc_norm_stderr,none": 0.01940713789402488,
+      "acc,none": 0.25263157894736843,
+      "acc_stderr,none": 0.01968455185911697,
+      "alias": "norcommonsenseqa_nn"
+    }
+  },
+  "group_subtasks": {
+    "norcommonsenseqa_nn": [
+      "prompt-4",
+      "prompt-3",
+      "prompt-2",
+      "prompt-1",
+      "prompt-0"
+    ]
+  },
+  "configs": {
+    "prompt-0": {
+      "task": "prompt-0",
+      "dataset_path": "ltg/norcommonsenseqa",
+      "dataset_name": "nn",
+      "test_split": "train",
+      "doc_to_text": "Spørsmål: {{question}}\n\nSvar:",
+      "doc_to_target": "{{choices.label.index(answer)}}",
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-1": {
+      "task": "prompt-1",
+      "dataset_path": "ltg/norcommonsenseqa",
+      "dataset_name": "nn",
+      "test_split": "train",
+      "doc_to_text": "{{question}}\nKva av følgande moglege svar er det rette?\nA: {{choices.text[0]}}\nB: {{choices.text[1]}}\nC: {{choices.text[2]}}\nD: {{choices.text[3]}}\nE: {{choices.text[4]}}\n\nSvar:",
+      "doc_to_target": "{{choices.label.index(answer)}}",
+      "doc_to_choice": "{{choices.label}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-2": {
+      "task": "prompt-2",
+      "dataset_path": "ltg/norcommonsenseqa",
+      "dataset_name": "nn",
+      "test_split": "train",
+      "doc_to_text": "Gitt alternativa under, kva er svaret på følgande spørsmål: {{question}}\n\nAlternativ:\n- {{choices.text[0]}}\n- {{choices.text[1]}}\n- {{choices.text[2]}}\n- {{choices.text[3]}}\n- {{choices.text[4]}}\n\nSvar:",
+      "doc_to_target": "{{choices.label.index(answer)}}",
+      "doc_to_choice": "{{choices.label}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-3": {
+      "task": "prompt-3",
+      "dataset_path": "ltg/norcommonsenseqa",
+      "dataset_name": "nn",
+      "test_split": "train",
+      "doc_to_text": "{{question}}\nVel rett svar blant desse alternativa:\n– {{choices.text[0]}}\n– {{choices.text[1]}}\n– {{choices.text[2]}}\n– {{choices.text[3]}}\n– {{choices.text[4]}}\n\nSvar:",
+      "doc_to_target": "{{choices.label.index(answer)}}",
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-4": {
+      "task": "prompt-4",
+      "dataset_path": "ltg/norcommonsenseqa",
+      "dataset_name": "nn",
+      "test_split": "train",
+      "doc_to_text": "{{question}}\nA: {{choices.text[0]}}\nB: {{choices.text[1]}}\nC: {{choices.text[2]}}\nD: {{choices.text[3]}}\nE: {{choices.text[4]}}\n\nEr det rette svaret A, B, C, D, eller E?\n\nSvar:",
+      "doc_to_target": "{{choices.label.index(answer)}}",
+      "doc_to_choice": "{{choices.label}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false
+    }
+  },
+  "versions": {
+    "prompt-0": "Yaml",
+    "prompt-1": "Yaml",
+    "prompt-2": "Yaml",
+    "prompt-3": "Yaml",
+    "prompt-4": "Yaml"
+  },
+  "n-shot": {
+    "norcommonsenseqa_nn": 0,
+    "prompt-0": 0,
+    "prompt-1": 0,
+    "prompt-2": 0,
+    "prompt-3": 0,
+    "prompt-4": 0
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=mimir-project/mimir-7b-factual,cache_dir=/pfs/lustrep3/scratch/project_465000498/models/",
+    "batch_size": "64",
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null
+  },
+  "git_hash": null,
+  "date": 1717554337.8035283,
+  "pretty_env_info": "PyTorch version: 1.13.1+rocm5.2\nIs debug build: False\nCUDA used to build PyTorch: N/A\nROCM used to build PyTorch: 5.2.21151-afdc89f8\n\nOS: SUSE Linux Enterprise Server 15 SP4 (x86_64)\nGCC version: (SUSE Linux) 7.5.0\nClang version: Could not collect\nCMake version: version 3.20.4\nLibc version: glibc-2.31\n\nPython version: 3.9.12 (main, Apr 18 2022, 21:29:31)  [GCC 9.3.0 20200312 (Cray Inc.)] (64-bit runtime)\nPython platform: Linux-5.14.21-150400.24.81_12.0.75-cray_shasta_c-x86_64-with-glibc2.31\nIs CUDA available: True\nCUDA runtime version: Could not collect\nCUDA_MODULE_LOADING set to: LAZY\nGPU models and configuration: \nNvidia driver version: Could not collect\ncuDNN version: Could not collect\nHIP runtime version: 5.2.21153\nMIOpen runtime version: 2.17.0\nIs XNNPACK available: True\n\nVersions of relevant libraries:\n[pip3] mypy-extensions==1.0.0\n[pip3] numpy==1.24.2\n[pip3] numpyencoder==0.3.0\n[pip3] torch==1.13.1+rocm5.2\n[pip3] torchaudio==0.13.1+rocm5.2\n[pip3] torchmetrics==0.9.3\n[pip3] torchvision==0.14.1+rocm5.2\n[conda] Could not collect",
+  "transformers_version": "4.37.1",
+  "upper_git_hash": null
+}
