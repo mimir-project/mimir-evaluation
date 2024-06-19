@@ -1,53 +1,53 @@
-Rank	Model	ask_gec_nb (errant)	delta (errant)
-1	@extended	28.18	xmark
-8	@extendedscratch	7.94	xmark
-2	@base	22.22	xmark
-13	@basescratch	4.75	xmark
-7	@fiction	8.61	+3.9
-3	@nonfiction	13.26	+8.5
-10	@factual	7.91	+3.2
-12	@newspapers	5.32	+0.6
-5	@books	10.68	+5.9
-11	@rightholders	7.84	+3.1
-9	@untranslatedwithnewspapers	7.93	+3.2
-6	@untranslated	9.94	+5.2
-4	@translated	12.46	+7.7
-2	@extended	44.35	xmark
-5	@extendedscratch	30.29	xmark
-1	@base	44.5	xmark
-10	@basescratch	26.18	xmark
-13	@fiction	21.47	--4.7
-3	@nonfiction	30.53	+4.4
-7	@factual	30.08	+3.9
-12	@newspapers	25.34	--0.8
-4	@books	30.39	+4.2
-8	@rightholders	29.76	+3.6
-9	@untranslatedwithnewspapers	29.7	+3.5
-6	@untranslated	30.14	+4.0
-11	@translated	25.72	--0.5
-2	@extended	44.35	xmark
-5	@extendedscratch	30.29	xmark
-1	@base	44.5	xmark
-10	@basescratch	26.18	xmark
-13	@fiction	21.47	--4.7
-3	@nonfiction	30.53	+4.4
-7	@factual	30.08	+3.9
-12	@newspapers	25.34	--0.8
-4	@books	30.39	+4.2
-8	@rightholders	29.76	+3.6
-9	@untranslatedwithnewspapers	29.7	+3.5
-6	@untranslated	30.14	+4.0
-11	@translated	25.72	--0.5
-1	@extended	50.58	xmark
-3	@extendedscratch	41.65	xmark
-2	@base	50.08	xmark
-5	@basescratch	37.5	xmark
-12	@fiction	34.32	--3.2
-8	@nonfiction	36.59	--0.9
-10	@factual	36.56	--0.9
-13	@newspapers	34.02	--3.5
-4	@books	37.83	+0.3
-6	@rightholders	36.87	--0.6
-7	@untranslatedwithnewspapers	36.74	--0.8
-9	@untranslated	36.57	--0.9
-11	@translated	35.35	--2.1
+k	Rank	Model	ask_gec_nb (errant)	delta (errant)
+0	1	@extended	28.18	xmark
+0	8	@extendedscratch	7.94	xmark
+0	2	@base	22.22	xmark
+0	13	@basescratch	4.75	xmark
+0	7	@fiction	8.61	+3.9
+0	3	@nonfiction	13.26	+8.5
+0	10	@factual	7.91	+3.2
+0	12	@newspapers	5.32	+0.6
+0	5	@books	10.68	+5.9
+0	11	@rightholders	7.84	+3.1
+0	9	@untranslatedwithnewspapers	7.93	+3.2
+0	6	@untranslated	9.94	+5.2
+0	4	@translated	12.46	+7.7
+1	2	@extended	44.35	xmark
+1	5	@extendedscratch	30.29	xmark
+1	1	@base	44.5	xmark
+1	10	@basescratch	26.18	xmark
+1	13	@fiction	21.47	--4.7
+1	3	@nonfiction	30.53	+4.4
+1	7	@factual	30.08	+3.9
+1	12	@newspapers	25.34	--0.8
+1	4	@books	30.39	+4.2
+1	8	@rightholders	29.76	+3.6
+1	9	@untranslatedwithnewspapers	29.7	+3.5
+1	6	@untranslated	30.14	+4.0
+1	11	@translated	25.72	--0.5
+4	1	@extended	48.3	xmark
+4	3	@extendedscratch	37.07	xmark
+4	2	@base	47.74	xmark
+4	10	@basescratch	34.25	xmark
+4	12	@fiction	31.94	--2.3
+4	4	@nonfiction	35.62	+1.4
+4	8	@factual	35.2	+1.0
+4	11	@newspapers	32.65	--1.6
+4	5	@books	35.52	+1.3
+4	9	@rightholders	35.19	+0.9
+4	7	@untranslatedwithnewspapers	35.24	+1.0
+4	6	@untranslated	35.3	+1.0
+4	13	@translated	31.9	--2.4
+16	1	@extended	50.58	xmark
+16	3	@extendedscratch	41.65	xmark
+16	2	@base	50.08	xmark
+16	5	@basescratch	37.5	xmark
+16	12	@fiction	34.32	--3.2
+16	8	@nonfiction	36.59	--0.9
+16	10	@factual	36.56	--0.9
+16	13	@newspapers	34.02	--3.5
+16	4	@books	37.83	+0.3
+16	6	@rightholders	36.87	--0.6
+16	7	@untranslatedwithnewspapers	36.74	--0.8
+16	9	@untranslated	36.57	--0.9
+16	11	@translated	35.35	--2.1
