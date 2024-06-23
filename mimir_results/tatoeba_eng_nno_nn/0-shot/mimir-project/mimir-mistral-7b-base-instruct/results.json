@@ -1,52 +1,52 @@
 {
   "results": {
-    "tatoeba_eng_nno_nb": {
-      "chrf,none": 36.81966862894464,
-      "chrf_stderr,none": 0.8914981616269038,
-      "bleu,none": 12.583162085268897,
-      "bleu_stderr,none": 0.9906807767985136,
-      "alias": "tatoeba_eng_nno_nb"
+    "tatoeba_eng_nno_nn": {
+      "bleu,none": 15.078198479962833,
+      "bleu_stderr,none": 0.8804723516455252,
+      "chrf,none": 40.50648496851096,
+      "chrf_stderr,none": 0.8764425361512331,
+      "alias": "tatoeba_eng_nno_nn"
     },
     "prompt-0": {
-      "bleu,none": 13.229864166204884,
-      "bleu_stderr,none": 1.7039723798613378,
-      "chrf,none": 45.09017102812054,
-      "chrf_stderr,none": 2.452396094041765,
+      "bleu,none": 13.04931737204013,
+      "bleu_stderr,none": 1.6705038346174543,
+      "chrf,none": 44.82583539651113,
+      "chrf_stderr,none": 2.452625755728557,
       "alias": " - prompt-0"
     },
     "prompt-1": {
-      "bleu,none": 4.8307236403399,
-      "bleu_stderr,none": 0.47039534151034584,
-      "chrf,none": 25.48891280226846,
-      "chrf_stderr,none": 1.5660679187896542,
+      "bleu,none": 3.349318350768651,
+      "bleu_stderr,none": 0.23382638023584956,
+      "chrf,none": 20.63110347734139,
+      "chrf_stderr,none": 0.9844584694408837,
       "alias": " - prompt-1"
     },
     "prompt-2": {
-      "bleu,none": 2.6915996420553863,
-      "bleu_stderr,none": 0.20817418259530956,
-      "chrf,none": 17.25819385122584,
-      "chrf_stderr,none": 0.8979743839123393,
+      "bleu,none": 7.6968099114792174,
+      "bleu_stderr,none": 0.7305691317421749,
+      "chrf,none": 35.68536208220737,
+      "chrf_stderr,none": 1.7612543341838942,
       "alias": " - prompt-2"
     },
     "prompt-3": {
-      "bleu,none": 29.580460892475426,
-      "bleu_stderr,none": 3.5404864475585174,
-      "chrf,none": 59.4413968341637,
-      "chrf_stderr,none": 1.8555673613345793,
+      "bleu,none": 36.217348285563325,
+      "bleu_stderr,none": 3.0041164921445516,
+      "chrf,none": 60.88363891798397,
+      "chrf_stderr,none": 1.484545688554169,
       "alias": " - prompt-3"
     }
   },
   "groups": {
-    "tatoeba_eng_nno_nb": {
-      "chrf,none": 36.81966862894464,
-      "chrf_stderr,none": 0.8914981616269038,
-      "bleu,none": 12.583162085268897,
-      "bleu_stderr,none": 0.9906807767985136,
-      "alias": "tatoeba_eng_nno_nb"
+    "tatoeba_eng_nno_nn": {
+      "bleu,none": 15.078198479962833,
+      "bleu_stderr,none": 0.8804723516455252,
+      "chrf,none": 40.50648496851096,
+      "chrf_stderr,none": 0.8764425361512331,
+      "alias": "tatoeba_eng_nno_nn"
     }
   },
   "group_subtasks": {
-    "tatoeba_eng_nno_nb": [
+    "tatoeba_eng_nno_nn": [
       "prompt-3",
       "prompt-2",
       "prompt-1",
@@ -94,7 +94,7 @@
       "dataset_name": "eng-nno",
       "training_split": "validation",
       "test_split": "test",
-      "doc_to_text": "Oversett følgende setning til nynorsk: {{sourceString}}\nNynorsk:",
+      "doc_to_text": "Omsett følgande setning til nynorsk: {{sourceString}}\nNynorsk:",
       "doc_to_target": "targetString",
       "description": "",
       "target_delimiter": " ",
@@ -128,7 +128,7 @@
       "dataset_name": "eng-nno",
       "training_split": "validation",
       "test_split": "test",
-      "doc_to_text": "Gi en nynorsk oversettelse av denne setningen: {{sourceString}}\nNynorsk:",
+      "doc_to_text": "Gje ei nynorsk omsetjing av denne setninga: {{sourceString}}\nNynorsk:",
       "doc_to_target": "targetString",
       "description": "",
       "target_delimiter": " ",
@@ -162,7 +162,7 @@
       "dataset_name": "eng-nno",
       "training_split": "validation",
       "test_split": "test",
-      "doc_to_text": "Hva blir \"{{sourceString}}\" på nynorsk?\nNynorsk:",
+      "doc_to_text": "Kva blir \"{{sourceString}}\" på nynorsk?\nNynorsk:",
       "doc_to_target": "targetString",
       "description": "",
       "target_delimiter": " ",
@@ -202,7 +202,7 @@
     "prompt-1": 0,
     "prompt-2": 0,
     "prompt-3": 0,
-    "tatoeba_eng_nno_nb": 0
+    "tatoeba_eng_nno_nn": 0
   },
   "config": {
     "model": "hf",
@@ -216,7 +216,7 @@
     "gen_kwargs": null
   },
   "git_hash": null,
-  "date": 1718901165.6557767,
+  "date": 1718902306.6906416,
   "pretty_env_info": "PyTorch version: 2.3.1+cu121\nIs debug build: False\nCUDA used to build PyTorch: 12.1\nROCM used to build PyTorch: N/A\n\nOS: Rocky Linux release 9.2 (Blue Onyx) (x86_64)\nGCC version: (GCC) 12.3.0\nClang version: Could not collect\nCMake version: version 3.26.3\nLibc version: glibc-2.34\n\nPython version: 3.11.3 (main, Apr 15 2024, 20:46:40) [GCC 12.3.0] (64-bit runtime)\nPython platform: Linux-5.14.0-284.11.1.el9_2.x86_64-x86_64-with-glibc2.34\nIs CUDA available: True\nCUDA runtime version: 11.8.89\nCUDA_MODULE_LOADING set to: LAZY\nGPU models and configuration: \nGPU 0: NVIDIA A100-SXM4-80GB\nGPU 1: NVIDIA A100-SXM4-80GB\nGPU 2: NVIDIA A100-SXM4-80GB\nGPU 3: NVIDIA A100-SXM4-80GB\n\nNvidia driver version: 545.23.08\ncuDNN version: Could not collect\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\n\nCPU:\nArchitecture:                    x86_64\nCPU op-mode(s):                  32-bit, 64-bit\nAddress sizes:                   48 bits physical, 48 bits virtual\nByte Order:                      Little Endian\nCPU(s):                          64\nOn-line CPU(s) list:             0-63\nVendor ID:                       AuthenticAMD\nModel name:                      AMD EPYC 75F3 32-Core Processor\nCPU family:                      25\nModel:                           1\nThread(s) per core:              1\nCore(s) per socket:              32\nSocket(s):                       2\nStepping:                        1\nBogoMIPS:                        5888.72\nFlags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 invpcid_single hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin brs arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca\nVirtualization:                  AMD-V\nL1d cache:                       2 MiB (64 instances)\nL1i cache:                       2 MiB (64 instances)\nL2 cache:                        32 MiB (64 instances)\nL3 cache:                        512 MiB (16 instances)\nNUMA node(s):                    8\nNUMA node0 CPU(s):               0-7\nNUMA node1 CPU(s):               8-15\nNUMA node2 CPU(s):               16-23\nNUMA node3 CPU(s):               24-31\nNUMA node4 CPU(s):               32-39\nNUMA node5 CPU(s):               40-47\nNUMA node6 CPU(s):               48-55\nNUMA node7 CPU(s):               56-63\nVulnerability Itlb multihit:     Not affected\nVulnerability L1tf:              Not affected\nVulnerability Mds:               Not affected\nVulnerability Meltdown:          Not affected\nVulnerability Mmio stale data:   Not affected\nVulnerability Retbleed:          Not affected\nVulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:        Mitigation; Retpolines, IBPB conditional, IBRS_FW, STIBP disabled, RSB filling, PBRSB-eIBRS Not affected\nVulnerability Srbds:             Not affected\nVulnerability Tsx async abort:   Not affected\n\nVersions of relevant libraries:\n[pip3] numpy==1.26.4\n[pip3] torch==2.3.1\n[pip3] triton==2.3.1\n[conda] Could not collect",
   "transformers_version": "4.41.2",
   "upper_git_hash": null
