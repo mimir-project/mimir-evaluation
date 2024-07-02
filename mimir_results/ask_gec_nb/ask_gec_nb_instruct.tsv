@@ -71,6 +71,11 @@ mimir-mistral-7b-base-scratch-instruct	0.318	4	4
 mimir-mistral-7b-base-scratch-instruct	0.4711	4	4
 mimir-mistral-7b-base-scratch-instruct	0.2813	4	3
 mimir-mistral-7b-base-scratch-instruct	0.4764	4	3
+mimir-mistral-7b-base-instruct	0.455	4	0
+mimir-mistral-7b-base-instruct	0.4529	4	1
+mimir-mistral-7b-base-instruct	0.4611	4	2
+mimir-mistral-7b-base-instruct	0.4764	4	3
+mimir-mistral-7b-base-instruct	0.4711	4	4
 mimir-mistral-7b-extended-instruct	0.4991	16	4
 mimir-mistral-7b-extended-instruct	0.495	16	2
 mimir-mistral-7b-extended-instruct	0.5039	16	3
