@@ -1,103 +1,103 @@
-model	errant	k	prompt
-mimir-mistral-7b-extended-instruct	0.3225	0	4
-mimir-mistral-7b-extended-instruct	0.378	0	2
-mimir-mistral-7b-extended-instruct	0.3328	0	3
-mimir-mistral-7b-extended-instruct	0.022	0	0
-mimir-mistral-7b-extended-instruct	0.0564	0	1
-mimir-mistral-7b-extended-scratch-instruct	0.1838	0	4
-mimir-mistral-7b-extended-scratch-instruct	0.1862	0	2
-mimir-mistral-7b-extended-scratch-instruct	0.0601	0	1
-mimir-mistral-7b-extended-scratch-instruct	0.0401	0	3
-mimir-mistral-7b-extended-scratch-instruct	0.0454	0	0
-Mistral-7B-v0.1	0.263	0	2
-Mistral-7B-v0.1	0.0398	0	3
-mimir-mistral-7b-base-scratch-instruct	0.1099	0	2
-mimir-mistral-7b-base-scratch-instruct	0.014	0	0
-mimir-mistral-7b-base-scratch-instruct	0.015	0	1
-mimir-mistral-7b-base-scratch-instruct	0.1713	0	4
-mimir-mistral-7b-base-scratch-instruct	0.0393	0	3
-mimir-mistral-7b-base-instruct	0.0293	0	1
-mimir-mistral-7b-base-instruct	0.021	0	0
-mimir-mistral-7b-base-instruct	0.392	0	2
-mimir-mistral-7b-base-instruct	0.3194	0	4
-mimir-mistral-7b-base-instruct	0.3221	0	3
-mimir-mistral-7b-extended-instruct	0.4416	1	4
-mimir-mistral-7b-extended-instruct	0.436	1	2
-mimir-mistral-7b-extended-instruct	0.4408	1	3
-mimir-mistral-7b-extended-instruct	0.3834	1	0
-mimir-mistral-7b-extended-instruct	0.4125	1	1
-mimir-mistral-7b-extended-scratch-instruct	0.2733	1	4
-mimir-mistral-7b-extended-scratch-instruct	0.2524	1	2
-mimir-mistral-7b-extended-scratch-instruct	0.2352	1	1
-mimir-mistral-7b-extended-scratch-instruct	0.2345	1	3
-mimir-mistral-7b-extended-scratch-instruct	0.1958	1	0
-Mistral-7B-v0.1	0.225	1	1
-Mistral-7B-v0.1	0.2513	1	4
-Mistral-7B-v0.1	0.2377	1	0
-Mistral-7B-v0.1	0.2555	1	2
-Mistral-7B-v0.1	0.2357	1	3
-mimir-mistral-7b-base-scratch-instruct	0.2215	1	2
-mimir-mistral-7b-base-scratch-instruct	0.1781	1	0
-mimir-mistral-7b-base-scratch-instruct	0.1967	1	1
-mimir-mistral-7b-base-scratch-instruct	0.2482	1	4
-mimir-mistral-7b-base-scratch-instruct	0.1561	1	3
-mimir-mistral-7b-base-instruct	0.3787	1	1
-mimir-mistral-7b-base-instruct	0.3633	1	0
-mimir-mistral-7b-base-instruct	0.4344	1	2
-mimir-mistral-7b-base-instruct	0.438	1	4
-mimir-mistral-7b-base-instruct	0.4411	1	3
-mimir-mistral-7b-extended-instruct	0.4683	4	4
-mimir-mistral-7b-extended-instruct	0.4666	4	2
-mimir-mistral-7b-extended-instruct	0.4826	4	3
-mimir-mistral-7b-extended-instruct	0.4585	4	0
-mimir-mistral-7b-extended-instruct	0.4591	4	1
-mimir-mistral-7b-extended-scratch-instruct	0.3512	4	4
-mimir-mistral-7b-extended-scratch-instruct	0.3342	4	2
-mimir-mistral-7b-extended-scratch-instruct	0.3131	4	1
-mimir-mistral-7b-extended-scratch-instruct	0.3492	4	3
-mimir-mistral-7b-extended-scratch-instruct	0.2988	4	0
-Mistral-7B-v0.1	0.2663	4	1
-Mistral-7B-v0.1	0.2832	4	4
-Mistral-7B-v0.1	0.2825	4	0
-Mistral-7B-v0.1	0.2969	4	2
-Mistral-7B-v0.1	0.2699	4	3
-mimir-mistral-7b-base-scratch-instruct	0.4529	4	1
-mimir-mistral-7b-base-scratch-instruct	0.3005	4	2
-mimir-mistral-7b-base-scratch-instruct	0.293	4	0
-mimir-mistral-7b-base-scratch-instruct	0.2742	4	1
-mimir-mistral-7b-base-scratch-instruct	0.455	4	0
-mimir-mistral-7b-base-scratch-instruct	0.4611	4	2
-mimir-mistral-7b-base-scratch-instruct	0.318	4	4
-mimir-mistral-7b-base-scratch-instruct	0.4711	4	4
-mimir-mistral-7b-base-scratch-instruct	0.2813	4	3
-mimir-mistral-7b-base-scratch-instruct	0.4764	4	3
-mimir-mistral-7b-base-instruct	0.455	4	0
-mimir-mistral-7b-base-instruct	0.4529	4	1
-mimir-mistral-7b-base-instruct	0.4611	4	2
-mimir-mistral-7b-base-instruct	0.4764	4	3
-mimir-mistral-7b-base-instruct	0.4711	4	4
-mimir-mistral-7b-extended-instruct	0.4991	16	4
-mimir-mistral-7b-extended-instruct	0.495	16	2
-mimir-mistral-7b-extended-instruct	0.5039	16	3
-mimir-mistral-7b-extended-instruct	0.4895	16	0
-mimir-mistral-7b-extended-instruct	0.4934	16	1
-mimir-mistral-7b-extended-scratch-instruct	0.4078	16	4
-mimir-mistral-7b-extended-scratch-instruct	0.3721	16	2
-mimir-mistral-7b-extended-scratch-instruct	0.361	16	1
-mimir-mistral-7b-extended-scratch-instruct	0.3868	16	3
-mimir-mistral-7b-extended-scratch-instruct	0.3592	16	0
-Mistral-7B-v0.1	0.2993	16	1
-Mistral-7B-v0.1	0.3064	16	4
-Mistral-7B-v0.1	0.3033	16	0
-Mistral-7B-v0.1	0.3118	16	2
-Mistral-7B-v0.1	0.2983	16	3
-mimir-mistral-7b-base-scratch-instruct	0.3186	16	2
-mimir-mistral-7b-base-scratch-instruct	0.3074	16	0
-mimir-mistral-7b-base-scratch-instruct	0.3056	16	1
-mimir-mistral-7b-base-scratch-instruct	0.3409	16	4
-mimir-mistral-7b-base-scratch-instruct	0.3155	16	3
-mimir-mistral-7b-base-instruct	0.486	16	1
-mimir-mistral-7b-base-instruct	0.4743	16	0
-mimir-mistral-7b-base-instruct	0.4778	16	2
-mimir-mistral-7b-base-instruct	0.4877	16	4
-mimir-mistral-7b-base-instruct	0.5015	16	3
+	model	errant	k	prompt
+0	mimir-mistral-7b-extended-instruct	32.25	0	4
+1	mimir-mistral-7b-extended-instruct	37.8	0	2
+2	mimir-mistral-7b-extended-instruct	33.28	0	3
+3	mimir-mistral-7b-extended-instruct	2.1999999999999997	0	0
+4	mimir-mistral-7b-extended-instruct	5.64	0	1
+5	mimir-mistral-7b-extended-scratch-instruct	18.38	0	4
+6	mimir-mistral-7b-extended-scratch-instruct	18.62	0	2
+7	mimir-mistral-7b-extended-scratch-instruct	6.01	0	1
+8	mimir-mistral-7b-extended-scratch-instruct	4.01	0	3
+9	mimir-mistral-7b-extended-scratch-instruct	4.54	0	0
+10	Mistral-7B-v0.1	26.3	0	2
+11	Mistral-7B-v0.1	3.9800000000000004	0	3
+12	mimir-mistral-7b-base-scratch-instruct	10.99	0	2
+13	mimir-mistral-7b-base-scratch-instruct	1.4000000000000001	0	0
+14	mimir-mistral-7b-base-scratch-instruct	1.5	0	1
+15	mimir-mistral-7b-base-scratch-instruct	17.130000000000003	0	4
+16	mimir-mistral-7b-base-scratch-instruct	3.93	0	3
+17	mimir-mistral-7b-base-instruct	2.93	0	1
+18	mimir-mistral-7b-base-instruct	2.1	0	0
+19	mimir-mistral-7b-base-instruct	39.2	0	2
+20	mimir-mistral-7b-base-instruct	31.94	0	4
+21	mimir-mistral-7b-base-instruct	32.21	0	3
+22	mimir-mistral-7b-extended-instruct	44.16	1	4
+23	mimir-mistral-7b-extended-instruct	43.6	1	2
+24	mimir-mistral-7b-extended-instruct	44.080000000000005	1	3
+25	mimir-mistral-7b-extended-instruct	38.34	1	0
+26	mimir-mistral-7b-extended-instruct	41.25	1	1
+27	mimir-mistral-7b-extended-scratch-instruct	27.33	1	4
+28	mimir-mistral-7b-extended-scratch-instruct	25.240000000000002	1	2
+29	mimir-mistral-7b-extended-scratch-instruct	23.52	1	1
+30	mimir-mistral-7b-extended-scratch-instruct	23.45	1	3
+31	mimir-mistral-7b-extended-scratch-instruct	19.580000000000002	1	0
+32	Mistral-7B-v0.1	22.5	1	1
+33	Mistral-7B-v0.1	25.130000000000003	1	4
+34	Mistral-7B-v0.1	23.77	1	0
+35	Mistral-7B-v0.1	25.55	1	2
+36	Mistral-7B-v0.1	23.57	1	3
+37	mimir-mistral-7b-base-scratch-instruct	22.15	1	2
+38	mimir-mistral-7b-base-scratch-instruct	17.810000000000002	1	0
+39	mimir-mistral-7b-base-scratch-instruct	19.67	1	1
+40	mimir-mistral-7b-base-scratch-instruct	24.82	1	4
+41	mimir-mistral-7b-base-scratch-instruct	15.61	1	3
+42	mimir-mistral-7b-base-instruct	37.87	1	1
+43	mimir-mistral-7b-base-instruct	36.33	1	0
+44	mimir-mistral-7b-base-instruct	43.44	1	2
+45	mimir-mistral-7b-base-instruct	43.8	1	4
+46	mimir-mistral-7b-base-instruct	44.11	1	3
+47	mimir-mistral-7b-extended-instruct	46.83	4	4
+48	mimir-mistral-7b-extended-instruct	46.660000000000004	4	2
+49	mimir-mistral-7b-extended-instruct	48.26	4	3
+50	mimir-mistral-7b-extended-instruct	45.85	4	0
+51	mimir-mistral-7b-extended-instruct	45.910000000000004	4	1
+52	mimir-mistral-7b-extended-scratch-instruct	35.120000000000005	4	4
+53	mimir-mistral-7b-extended-scratch-instruct	33.42	4	2
+54	mimir-mistral-7b-extended-scratch-instruct	31.31	4	1
+55	mimir-mistral-7b-extended-scratch-instruct	34.92	4	3
+56	mimir-mistral-7b-extended-scratch-instruct	29.880000000000003	4	0
+57	Mistral-7B-v0.1	26.63	4	1
+58	Mistral-7B-v0.1	28.32	4	4
+59	Mistral-7B-v0.1	28.249999999999996	4	0
+60	Mistral-7B-v0.1	29.69	4	2
+61	Mistral-7B-v0.1	26.99	4	3
+62	mimir-mistral-7b-base-scratch-instruct	45.29	4	1
+63	mimir-mistral-7b-base-scratch-instruct	30.049999999999997	4	2
+64	mimir-mistral-7b-base-scratch-instruct	29.299999999999997	4	0
+65	mimir-mistral-7b-base-scratch-instruct	27.42	4	1
+66	mimir-mistral-7b-base-scratch-instruct	45.5	4	0
+67	mimir-mistral-7b-base-scratch-instruct	46.11	4	2
+68	mimir-mistral-7b-base-scratch-instruct	31.8	4	4
+69	mimir-mistral-7b-base-scratch-instruct	47.11	4	4
+70	mimir-mistral-7b-base-scratch-instruct	28.13	4	3
+71	mimir-mistral-7b-base-scratch-instruct	47.64	4	3
+72	mimir-mistral-7b-base-instruct	45.5	4	0
+73	mimir-mistral-7b-base-instruct	45.29	4	1
+74	mimir-mistral-7b-base-instruct	46.11	4	2
+75	mimir-mistral-7b-base-instruct	47.64	4	3
+76	mimir-mistral-7b-base-instruct	47.11	4	4
+77	mimir-mistral-7b-extended-instruct	49.91	16	4
+78	mimir-mistral-7b-extended-instruct	49.5	16	2
+79	mimir-mistral-7b-extended-instruct	50.39	16	3
+80	mimir-mistral-7b-extended-instruct	48.949999999999996	16	0
+81	mimir-mistral-7b-extended-instruct	49.34	16	1
+82	mimir-mistral-7b-extended-scratch-instruct	40.78	16	4
+83	mimir-mistral-7b-extended-scratch-instruct	37.21	16	2
+84	mimir-mistral-7b-extended-scratch-instruct	36.1	16	1
+85	mimir-mistral-7b-extended-scratch-instruct	38.68	16	3
+86	mimir-mistral-7b-extended-scratch-instruct	35.92	16	0
+87	Mistral-7B-v0.1	29.93	16	1
+88	Mistral-7B-v0.1	30.64	16	4
+89	Mistral-7B-v0.1	30.330000000000002	16	0
+90	Mistral-7B-v0.1	31.180000000000003	16	2
+91	Mistral-7B-v0.1	29.830000000000002	16	3
+92	mimir-mistral-7b-base-scratch-instruct	31.86	16	2
+93	mimir-mistral-7b-base-scratch-instruct	30.740000000000002	16	0
+94	mimir-mistral-7b-base-scratch-instruct	30.56	16	1
+95	mimir-mistral-7b-base-scratch-instruct	34.089999999999996	16	4
+96	mimir-mistral-7b-base-scratch-instruct	31.55	16	3
+97	mimir-mistral-7b-base-instruct	48.6	16	1
+98	mimir-mistral-7b-base-instruct	47.43	16	0
+99	mimir-mistral-7b-base-instruct	47.78	16	2
+100	mimir-mistral-7b-base-instruct	48.77	16	4
+101	mimir-mistral-7b-base-instruct	50.14999999999999	16	3
