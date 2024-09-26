@@ -1,0 +1,259 @@
+{
+  "results": {
+    "norec_sentence_nb": {
+      "acc,none": 0.5917667238421955,
+      "acc_stderr,none": 0.009070182829032748,
+      "f1,none": 0.5418200536294198,
+      "f1_stderr,none": "N/A",
+      "alias": "norec_sentence_nb"
+    },
+    "prompt-0": {
+      "acc,none": 0.6329331046312179,
+      "acc_stderr,none": 0.019979748754612288,
+      "f1,none": 0.5602636402086564,
+      "f1_stderr,none": "N/A",
+      "alias": " - prompt-0"
+    },
+    "prompt-1": {
+      "acc,none": 0.5711835334476844,
+      "acc_stderr,none": 0.02051455373781478,
+      "f1,none": 0.5318442285949223,
+      "f1_stderr,none": "N/A",
+      "alias": " - prompt-1"
+    },
+    "prompt-2": {
+      "acc,none": 0.6415094339622641,
+      "acc_stderr,none": 0.019878284275517303,
+      "f1,none": 0.5525085479031471,
+      "f1_stderr,none": "N/A",
+      "alias": " - prompt-2"
+    },
+    "prompt-3": {
+      "acc,none": 0.6003430531732419,
+      "acc_stderr,none": 0.020304015467968218,
+      "f1,none": 0.560267777659082,
+      "f1_stderr,none": "N/A",
+      "alias": " - prompt-3"
+    },
+    "prompt-4": {
+      "acc,none": 0.5128644939965694,
+      "acc_stderr,none": 0.020718805674582688,
+      "f1,none": 0.5042160737812912,
+      "f1_stderr,none": "N/A",
+      "alias": " - prompt-4"
+    }
+  },
+  "groups": {
+    "norec_sentence_nb": {
+      "acc,none": 0.5917667238421955,
+      "acc_stderr,none": 0.009070182829032748,
+      "f1,none": 0.5418200536294198,
+      "f1_stderr,none": "N/A",
+      "alias": "norec_sentence_nb"
+    }
+  },
+  "group_subtasks": {
+    "norec_sentence_nb": [
+      "prompt-4",
+      "prompt-3",
+      "prompt-2",
+      "prompt-1",
+      "prompt-0"
+    ]
+  },
+  "configs": {
+    "prompt-0": {
+      "task": "prompt-0",
+      "dataset_path": "ltg/norec_sentence",
+      "dataset_name": "binary",
+      "training_split": "train",
+      "test_split": "test",
+      "doc_to_text": "Tekst: {{review}}\nSentiment:",
+      "doc_to_target": "sentiment",
+      "doc_to_choice": [
+        "negativ",
+        "positiv"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 4,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "f1",
+          "aggregation": "def multi_f1(items):\n    preds, golds = zip(*items)\n    preds = np.array(preds)\n    golds = np.array(golds)\n    fscore = sklearn.metrics.f1_score(golds, preds, average=\"macro\")\n    return fscore\n",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-1": {
+      "task": "prompt-1",
+      "dataset_path": "ltg/norec_sentence",
+      "dataset_name": "binary",
+      "training_split": "train",
+      "test_split": "test",
+      "doc_to_text": "{{review}}\nEr denne setningen \"positiv\" eller \"negativ\"?",
+      "doc_to_target": "sentiment",
+      "doc_to_choice": [
+        "negativ",
+        "positiv"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 4,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "f1",
+          "aggregation": "def multi_f1(items):\n    preds, golds = zip(*items)\n    preds = np.array(preds)\n    golds = np.array(golds)\n    fscore = sklearn.metrics.f1_score(golds, preds, average=\"macro\")\n    return fscore\n",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-2": {
+      "task": "prompt-2",
+      "dataset_path": "ltg/norec_sentence",
+      "dataset_name": "binary",
+      "training_split": "train",
+      "test_split": "test",
+      "doc_to_text": "{{review}}\nHva slags sentiment uttrykker anmelderen?",
+      "doc_to_target": "sentiment",
+      "doc_to_choice": [
+        "negativ",
+        "positiv"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 4,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "f1",
+          "aggregation": "def multi_f1(items):\n    preds, golds = zip(*items)\n    preds = np.array(preds)\n    golds = np.array(golds)\n    fscore = sklearn.metrics.f1_score(golds, preds, average=\"macro\")\n    return fscore\n",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-3": {
+      "task": "prompt-3",
+      "dataset_path": "ltg/norec_sentence",
+      "dataset_name": "binary",
+      "training_split": "train",
+      "test_split": "test",
+      "doc_to_text": "{{review}}\nEr anmeldelsen \"positiv\" eller \"negativ\"?",
+      "doc_to_target": "sentiment",
+      "doc_to_choice": [
+        "negativ",
+        "positiv"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 4,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "f1",
+          "aggregation": "def multi_f1(items):\n    preds, golds = zip(*items)\n    preds = np.array(preds)\n    golds = np.array(golds)\n    fscore = sklearn.metrics.f1_score(golds, preds, average=\"macro\")\n    return fscore\n",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-4": {
+      "task": "prompt-4",
+      "dataset_path": "ltg/norec_sentence",
+      "dataset_name": "binary",
+      "training_split": "train",
+      "test_split": "test",
+      "doc_to_text": "{{review}}\nEr denne setningen positiv eller negativ?",
+      "doc_to_target": "sentiment",
+      "doc_to_choice": [
+        "negativ",
+        "positiv"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 4,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "f1",
+          "aggregation": "def multi_f1(items):\n    preds, golds = zip(*items)\n    preds = np.array(preds)\n    golds = np.array(golds)\n    fscore = sklearn.metrics.f1_score(golds, preds, average=\"macro\")\n    return fscore\n",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false
+    }
+  },
+  "versions": {
+    "prompt-0": "Yaml",
+    "prompt-1": "Yaml",
+    "prompt-2": "Yaml",
+    "prompt-3": "Yaml",
+    "prompt-4": "Yaml"
+  },
+  "n-shot": {
+    "norec_sentence_nb": 4,
+    "prompt-0": 4,
+    "prompt-1": 4,
+    "prompt-2": 4,
+    "prompt-3": 4,
+    "prompt-4": 4
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=mimir-project/mimir-mistral-250m-extended-scratch",
+    "batch_size": "auto",
+    "batch_sizes": [
+      64
+    ],
+    "device": null,
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null
+  },
+  "git_hash": null,
+  "date": 1727089702.6926095,
+  "pretty_env_info": "PyTorch version: 2.4.1+cu121\nIs debug build: False\nCUDA used to build PyTorch: 12.1\nROCM used to build PyTorch: N/A\n\nOS: Rocky Linux release 9.4 (Blue Onyx) (x86_64)\nGCC version: (GCC) 12.3.0\nClang version: Could not collect\nCMake version: version 3.26.4\nLibc version: glibc-2.34\n\nPython version: 3.11.3 (main, Apr 15 2024, 20:46:40) [GCC 12.3.0] (64-bit runtime)\nPython platform: Linux-5.14.0-427.13.1.el9_4.x86_64-x86_64-with-glibc2.34\nIs CUDA available: True\nCUDA runtime version: 11.8.89\nCUDA_MODULE_LOADING set to: LAZY\nGPU models and configuration: GPU 0: NVIDIA A100 80GB PCIe\nNvidia driver version: 555.42.06\ncuDNN version: Could not collect\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\n\nCPU:\nArchitecture:                       x86_64\nCPU op-mode(s):                     32-bit, 64-bit\nAddress sizes:                      46 bits physical, 48 bits virtual\nByte Order:                         Little Endian\nCPU(s):                             48\nOn-line CPU(s) list:                0-47\nVendor ID:                          GenuineIntel\nModel name:                         Intel(R) Xeon(R) Gold 6248R CPU @ 3.00GHz\nCPU family:                         6\nModel:                              85\nThread(s) per core:                 1\nCore(s) per socket:                 24\nSocket(s):                          2\nStepping:                           7\nCPU(s) scaling MHz:                 98%\nCPU max MHz:                        4000.0000\nCPU min MHz:                        1200.0000\nBogoMIPS:                           6000.00\nFlags:                              fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities\nVirtualization:                     VT-x\nL1d cache:                          1.5 MiB (48 instances)\nL1i cache:                          1.5 MiB (48 instances)\nL2 cache:                           48 MiB (48 instances)\nL3 cache:                           71.5 MiB (2 instances)\nNUMA node(s):                       2\nNUMA node0 CPU(s):                  0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46\nNUMA node1 CPU(s):                  1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47\nVulnerability Gather data sampling: Mitigation; Microcode\nVulnerability Itlb multihit:        KVM: Mitigation: VMX disabled\nVulnerability L1tf:                 Not affected\nVulnerability Mds:                  Not affected\nVulnerability Meltdown:             Not affected\nVulnerability Mmio stale data:      Mitigation; Clear CPU buffers; SMT disabled\nVulnerability Retbleed:             Mitigation; Enhanced IBRS\nVulnerability Spec rstack overflow: Not affected\nVulnerability Spec store bypass:    Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:           Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:           Mitigation; Enhanced / Automatic IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence\nVulnerability Srbds:                Not affected\nVulnerability Tsx async abort:      Mitigation; TSX disabled\n\nVersions of relevant libraries:\n[pip3] numpy==2.1.1\n[pip3] torch==2.4.1\n[pip3] triton==3.0.0\n[conda] Could not collect",
+  "transformers_version": "4.44.2",
+  "upper_git_hash": null
+}
