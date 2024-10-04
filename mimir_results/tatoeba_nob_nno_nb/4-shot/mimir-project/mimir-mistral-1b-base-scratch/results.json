@@ -1,0 +1,259 @@
+{
+  "results": {
+    "tatoeba_nob_nno_nb": {
+      "bleu,none": 65.01951291030402,
+      "bleu_stderr,none": 1.4887516218635644,
+      "bertscore_f1,none": 0.9591449896494547,
+      "bertscore_f1_stderr,none": 0.0013385081400887919,
+      "chrf,none": 81.61132675801008,
+      "chrf_stderr,none": 0.7259235573793007,
+      "alias": "tatoeba_nob_nno_nb"
+    },
+    "prompt-0": {
+      "bleu,none": 68.0522361620068,
+      "bleu_stderr,none": 1.6584777026500823,
+      "chrf,none": 83.36596152212026,
+      "chrf_stderr,none": 1.016030336277592,
+      "bertscore_f1,none": 0.9624541760772787,
+      "bertscore_f1_stderr,none": 0.0025103483764983086,
+      "alias": " - prompt-0"
+    },
+    "prompt-1": {
+      "bleu,none": 66.97901682645914,
+      "bleu_stderr,none": 1.8668715213874685,
+      "chrf,none": 82.38914514101607,
+      "chrf_stderr,none": 1.224966221236791,
+      "bertscore_f1,none": 0.9594679892704051,
+      "bertscore_f1_stderr,none": 0.0025977986910617657,
+      "alias": " - prompt-1"
+    },
+    "prompt-2": {
+      "bleu,none": 61.21477451616292,
+      "bleu_stderr,none": 4.967244573002548,
+      "chrf,none": 80.73964983575408,
+      "chrf_stderr,none": 1.9201196650074053,
+      "bertscore_f1,none": 0.9581316201917587,
+      "bertscore_f1_stderr,none": 0.0028533005478075745,
+      "alias": " - prompt-2"
+    },
+    "prompt-3": {
+      "bleu,none": 63.832024136587215,
+      "bleu_stderr,none": 2.1337352342884457,
+      "chrf,none": 79.95055053314995,
+      "chrf_stderr,none": 1.4871855174038813,
+      "bertscore_f1,none": 0.9565261730583765,
+      "bertscore_f1_stderr,none": 0.002733849599110089,
+      "alias": " - prompt-3"
+    }
+  },
+  "groups": {
+    "tatoeba_nob_nno_nb": {
+      "bleu,none": 65.01951291030402,
+      "bleu_stderr,none": 1.4887516218635644,
+      "bertscore_f1,none": 0.9591449896494547,
+      "bertscore_f1_stderr,none": 0.0013385081400887919,
+      "chrf,none": 81.61132675801008,
+      "chrf_stderr,none": 0.7259235573793007,
+      "alias": "tatoeba_nob_nno_nb"
+    }
+  },
+  "group_subtasks": {
+    "tatoeba_nob_nno_nb": [
+      "prompt-3",
+      "prompt-2",
+      "prompt-1",
+      "prompt-0"
+    ]
+  },
+  "configs": {
+    "prompt-0": {
+      "task": "prompt-0",
+      "dataset_path": "Helsinki-NLP/tatoeba_mt",
+      "dataset_name": "nob-nno",
+      "test_split": "test",
+      "doc_to_text": "Bokmål: {{sourceString}}\nNynorsk:",
+      "doc_to_target": "targetString",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 4,
+      "metric_list": [
+        {
+          "metric": "bleu",
+          "higher_is_better": true
+        },
+        {
+          "metric": "chrf",
+          "higher_is_better": true
+        },
+        {
+          "metric": "def bertscore_f1(references, predictions, **kwargs):\n    \"\"\"Computes the F1 score of the BERTScore metric.\n\n    Args:\n        references: A list of reference strings.\n        predictions: A list of predicted strings.\n        **kwargs: Additional keyword arguments.\n\n    Returns:\n        The F1 score of the BERTScore metric.\n    \"\"\"\n    bertscore = load(\"bertscore\")\n    return bertscore.compute(predictions=predictions, references=references, **kwargs)[\n        \"f1\"\n    ][0]\n",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "model_type": "bert-base-multilingual-cased",
+          "num_layers": 9
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "\n"
+        ],
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 256
+      },
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-1": {
+      "task": "prompt-1",
+      "dataset_path": "Helsinki-NLP/tatoeba_mt",
+      "dataset_name": "nob-nno",
+      "test_split": "test",
+      "doc_to_text": "Oversett følgende setning til nynorsk: {{sourceString}}\nNynorsk:",
+      "doc_to_target": "targetString",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 4,
+      "metric_list": [
+        {
+          "metric": "bleu",
+          "higher_is_better": true
+        },
+        {
+          "metric": "chrf",
+          "higher_is_better": true
+        },
+        {
+          "metric": "def bertscore_f1(references, predictions, **kwargs):\n    \"\"\"Computes the F1 score of the BERTScore metric.\n\n    Args:\n        references: A list of reference strings.\n        predictions: A list of predicted strings.\n        **kwargs: Additional keyword arguments.\n\n    Returns:\n        The F1 score of the BERTScore metric.\n    \"\"\"\n    bertscore = load(\"bertscore\")\n    return bertscore.compute(predictions=predictions, references=references, **kwargs)[\n        \"f1\"\n    ][0]\n",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "model_type": "bert-base-multilingual-cased",
+          "num_layers": 9
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "\n"
+        ],
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 256
+      },
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-2": {
+      "task": "prompt-2",
+      "dataset_path": "Helsinki-NLP/tatoeba_mt",
+      "dataset_name": "nob-nno",
+      "test_split": "test",
+      "doc_to_text": "Gi en nynorsk oversettelse av denne setningen: {{sourceString}}\nNynorsk:",
+      "doc_to_target": "targetString",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 4,
+      "metric_list": [
+        {
+          "metric": "bleu",
+          "higher_is_better": true
+        },
+        {
+          "metric": "chrf",
+          "higher_is_better": true
+        },
+        {
+          "metric": "def bertscore_f1(references, predictions, **kwargs):\n    \"\"\"Computes the F1 score of the BERTScore metric.\n\n    Args:\n        references: A list of reference strings.\n        predictions: A list of predicted strings.\n        **kwargs: Additional keyword arguments.\n\n    Returns:\n        The F1 score of the BERTScore metric.\n    \"\"\"\n    bertscore = load(\"bertscore\")\n    return bertscore.compute(predictions=predictions, references=references, **kwargs)[\n        \"f1\"\n    ][0]\n",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "model_type": "bert-base-multilingual-cased",
+          "num_layers": 9
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "\n"
+        ],
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 256
+      },
+      "repeats": 1,
+      "should_decontaminate": false
+    },
+    "prompt-3": {
+      "task": "prompt-3",
+      "dataset_path": "Helsinki-NLP/tatoeba_mt",
+      "dataset_name": "nob-nno",
+      "test_split": "test",
+      "doc_to_text": "Hva blir \"{{sourceString}}\" på nynorsk?\nNynorsk:",
+      "doc_to_target": "targetString",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 4,
+      "metric_list": [
+        {
+          "metric": "bleu",
+          "higher_is_better": true
+        },
+        {
+          "metric": "chrf",
+          "higher_is_better": true
+        },
+        {
+          "metric": "def bertscore_f1(references, predictions, **kwargs):\n    \"\"\"Computes the F1 score of the BERTScore metric.\n\n    Args:\n        references: A list of reference strings.\n        predictions: A list of predicted strings.\n        **kwargs: Additional keyword arguments.\n\n    Returns:\n        The F1 score of the BERTScore metric.\n    \"\"\"\n    bertscore = load(\"bertscore\")\n    return bertscore.compute(predictions=predictions, references=references, **kwargs)[\n        \"f1\"\n    ][0]\n",
+          "aggregation": "mean",
+          "higher_is_better": true,
+          "model_type": "bert-base-multilingual-cased",
+          "num_layers": 9
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "\n"
+        ],
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 256
+      },
+      "repeats": 1,
+      "should_decontaminate": false
+    }
+  },
+  "versions": {
+    "prompt-0": "Yaml",
+    "prompt-1": "Yaml",
+    "prompt-2": "Yaml",
+    "prompt-3": "Yaml"
+  },
+  "n-shot": {
+    "prompt-0": 4,
+    "prompt-1": 4,
+    "prompt-2": 4,
+    "prompt-3": 4,
+    "tatoeba_nob_nno_nb": 4
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=mimir-project/mimir-mistral-1b-base-scratch,trust_remote_code=True",
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null
+  },
+  "git_hash": null,
+  "date": 1727421375.164229,
+  "pretty_env_info": "PyTorch version: 2.4.1+cu121\nIs debug build: False\nCUDA used to build PyTorch: 12.1\nROCM used to build PyTorch: N/A\n\nOS: Rocky Linux release 9.4 (Blue Onyx) (x86_64)\nGCC version: (GCC) 12.3.0\nClang version: Could not collect\nCMake version: version 3.26.4\nLibc version: glibc-2.34\n\nPython version: 3.11.3 (main, Apr 15 2024, 20:46:40) [GCC 12.3.0] (64-bit runtime)\nPython platform: Linux-5.14.0-427.13.1.el9_4.x86_64-x86_64-with-glibc2.34\nIs CUDA available: True\nCUDA runtime version: 11.8.89\nCUDA_MODULE_LOADING set to: LAZY\nGPU models and configuration: GPU 0: NVIDIA A100-SXM4-80GB\nNvidia driver version: 555.42.06\ncuDNN version: Could not collect\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\n\nCPU:\nArchitecture:                       x86_64\nCPU op-mode(s):                     32-bit, 64-bit\nAddress sizes:                      48 bits physical, 48 bits virtual\nByte Order:                         Little Endian\nCPU(s):                             64\nOn-line CPU(s) list:                0-63\nVendor ID:                          AuthenticAMD\nModel name:                         AMD EPYC 75F3 32-Core Processor\nCPU family:                         25\nModel:                              1\nThread(s) per core:                 1\nCore(s) per socket:                 32\nSocket(s):                          2\nStepping:                           1\nBogoMIPS:                           5888.82\nFlags:                              fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin brs arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca debug_swap\nVirtualization:                     AMD-V\nL1d cache:                          2 MiB (64 instances)\nL1i cache:                          2 MiB (64 instances)\nL2 cache:                           32 MiB (64 instances)\nL3 cache:                           512 MiB (16 instances)\nNUMA node(s):                       8\nNUMA node0 CPU(s):                  0-7\nNUMA node1 CPU(s):                  8-15\nNUMA node2 CPU(s):                  16-23\nNUMA node3 CPU(s):                  24-31\nNUMA node4 CPU(s):                  32-39\nNUMA node5 CPU(s):                  40-47\nNUMA node6 CPU(s):                  48-55\nNUMA node7 CPU(s):                  56-63\nVulnerability Gather data sampling: Not affected\nVulnerability Itlb multihit:        Not affected\nVulnerability L1tf:                 Not affected\nVulnerability Mds:                  Not affected\nVulnerability Meltdown:             Not affected\nVulnerability Mmio stale data:      Not affected\nVulnerability Retbleed:             Not affected\nVulnerability Spec rstack overflow: Mitigation; Safe RET\nVulnerability Spec store bypass:    Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:           Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:           Mitigation; Retpolines, IBPB conditional, IBRS_FW, STIBP disabled, RSB filling, PBRSB-eIBRS Not affected\nVulnerability Srbds:                Not affected\nVulnerability Tsx async abort:      Not affected\n\nVersions of relevant libraries:\n[pip3] numpy==2.1.1\n[pip3] torch==2.4.1\n[pip3] triton==3.0.0\n[conda] Could not collect",
+  "transformers_version": "4.44.2",
+  "upper_git_hash": null
+}
