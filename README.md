@@ -1,5 +1,8 @@
 # mimir-evaluation-suite
 
+> [!CAUTION]
+> This repository and its contents are part of the paper [The Impact of Copyrighted Material on Large Language Models: A Norwegian Perspective](https://arxiv.org/abs/2412.09460v4), and are released for transparency and reproducibility purposes only. We discourage the use of this evaluation suite in its current state. An improved version of the codebase is now available and maintained as [NorEval](https://github.com/ltgoslo/noreval).
+
 ## Codebase
 The evaluation codebase relies on the [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness/tree/main) framework codebase (version 0.4.2). In particular, each task in the mimir-evaluation-suite is integrated into the framework with the help of ```.yaml``` configuration files, which allow for high task customizability.
 
@@ -17,6 +20,13 @@ Each table below has the following columns:
   * ❌ denotes that a given setup is not supported due to the lack of the training or validation set to sample the demonstration examples from.
 * **Task category**: task formulation or task category.
 * **HuggingFace**: a link to the dataset on HuggingFace.
+
+### Note
+
+#### (1) Some HF datasets from the ```mimir-project``` repository are currently not available; to be released later.
+
+#### (2) The ```.yaml``` configuration files are created according to version 0.4.2 of the ```lm-evaluation-harness``` framework. This repository will not updates beyond version 0.4.2. For an up-to-date codebase, visit [NorEval](https://github.com/ltgoslo/noreval). However, you can still use 0.4.2 for empirical evaluation experiments. 
+
 
 <details open>
     <summary>Text classification</summary>
