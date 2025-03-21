@@ -25,7 +25,7 @@ Each table below has the following columns:
 
 #### (1) Some HF datasets from the ```mimir-project``` repository are currently not available; to be released later.
 
-#### (2) The ```.yaml``` configuration files are created according to version 0.4.2 of the ```lm-evaluation-harness``` framework. This repository will not updates beyond version 0.4.2. For an up-to-date codebase, visit [NorEval](https://github.com/ltgoslo/noreval). However, you can still use 0.4.2 for empirical evaluation experiments. 
+#### (2) The ```.yaml``` configuration files are created according to version 0.4.2 of the ```lm-evaluation-harness``` framework. This repository will not updates beyond version 0.4.2. For an up-to-date codebase, use [NorEval](https://github.com/ltgoslo/noreval). However, you can still use 0.4.2 for empirical evaluation experiments. 
 
 
 <details open>
